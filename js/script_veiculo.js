@@ -1,6 +1,6 @@
 import { calcularIPVA } from "./script_calculo.js";
 
-const form = document.getElementById("formVeiculo");
+const form = document.getElementById("formulario");
 const lista = document.getElementById("listaVeiculos");
 
 form.addEventListener("submit", function(event){
