@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadrastro de Veículos</title>
+    <link rel="stylestheet" href="css/style_veiculo.css">
+</head>
+<body>
+    
+
+<h1>Cadastro de Veículos</h1>
+
+<form id="formulario"></form>
+
+        <input type="text" id="modelo" placeholder="Modelo" required>
+
+        <input type="text" id="marca" placeholder="Marca" required>
+
+        <input type="text" id="placa" placeholder="Placa" required>
+
+        <input type="number" id="ano" placeholder="Ano de Fabricação" required>
+
+        <input type="number" id="valor" placeholder="Valor do Veículo" required>
+
+        <h3>Combustível</h3>
+
+        <label>
+            <input type="radio" name="combustivel" value="gasolina" required>
+            Gasolina
+        </label>
+
+        <label type="radio" name="combustivel" value="etanol" required>
+            Etanol
+        </label>
+
+        <label>
+            <input type="radio" name="combustivel" value="bicombustivel">
+            Bicombustível
+        </label>
+
+        <label>
+            <input type="radio" name="combustivel" value="hibrido">
+            Híbrido
+        </label>
+
+        <label>
+            <input type="radio" name="combustivel" value="eletrico">
+            Elétrico
+        </label>
+
+        <br><br>
+
+        <button type="submit">Adicionar</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Veículos Cadastrados</h2>
+
+    <div id="listaVeiculos"></div>
+
+    <script type="module" src="js/script_veiculo.js"></script>
+
+</body>
+</html>
